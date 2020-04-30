@@ -21,9 +21,9 @@
             <tbody>
                 @foreach ($contacts as $contact )
                     
-                @endforeach
+               
                 <tr>
-                    <td>1</td>
+                    <td>{{$contact->id}}</td>
                     <td>{{$contact->name}}</td>
                     <td>{{$contact->email}}</td>
                     <td>{{$contact->phone}}</td>
@@ -34,7 +34,7 @@
                     </td>
 
                 </tr>
-               
+                @endforeach
             </tbody>
         </table>
     </div>
